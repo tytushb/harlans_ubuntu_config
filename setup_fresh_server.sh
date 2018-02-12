@@ -4,16 +4,17 @@
 git config --global user.email "hbomb@fastai.com" 
 git config --global user.name "Harlan Beverly"
 
-#setup vim how I like it...
-mkdir ~/.vim
-cp -r vim/* ~/.vim/*
-
-cd ~/.vim
-./install.sh
-
 #install curl for stuff....
 sudo apt-get update
 sudo apt-get -y install curl
+
+#setup vim how I like it...
+sudo apt-get -y install vim
+mkdir ~/.vim
+cp -r vim/* ~/.vim/
+
+cd ~/.vim
+./install.sh
 
 #install Visual Studio Code   (e.g. code )
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
