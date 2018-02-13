@@ -92,6 +92,9 @@ Plugin 'honza/vim-snippets'
 
 " Add git flags support to NerdTree
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
+"
+"Typescript
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -110,6 +113,8 @@ filetype plugin indent on
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufRead,BufNewFile *.ts   setfiletype typescript
+
 " General
 "
 " Sets how many lines of history VIM has to remember
@@ -143,6 +148,10 @@ set expandtab
 
 " Always show some lines after the cursor
 set scrolloff=8
+
+" set default inert to paste
+set clipboard=unnamed
+set paste
 
 " Wrap lines, but only insert newlines when enter is pressed
 set wrap " Wrap words visually
