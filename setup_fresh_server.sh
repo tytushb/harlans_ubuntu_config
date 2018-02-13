@@ -12,6 +12,7 @@ sudo apt-get -y install curl
 sudo apt-get -y install vim
 mkdir ~/.vim
 cp -r vim/* ~/.vim/
+cp -r vim/.* ~/.vim/
 
 cd ~/.vim
 ./install.sh
