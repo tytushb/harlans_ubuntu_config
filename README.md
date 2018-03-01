@@ -11,10 +11,9 @@ sudo apt-get install git
 
 mkdir .ssh
 
-sudo cp /media/sf_C_DRIVE/Users/hbomb/OneDrive/ImportantPersonal/PGP_Keyr
-ings/hbomb_fastai_github.pvt .ssh
+sudo cp .pvt .ssh
 
-sudo chmod 600 ~/.ssh/hbomb_fastai_github.pvt
+sudo chmod 600 ~/.ssh/h.pvt
 
 #then start the ssh-agent with:
 
@@ -22,7 +21,7 @@ eval $(ssh-agent -s)
 
 #then run this to add personal github key to sever
 
-ssh-add ~/.ssh/hbomb_fastai_github.pvt
+ssh-add ~/.ssh/h.pvt
 
 #pull from github with
 
