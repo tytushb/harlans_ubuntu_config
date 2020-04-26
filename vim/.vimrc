@@ -141,7 +141,7 @@ command! W w !sudo tee % > /dev/null
 set pastetoggle=<F5>
 
 " Tab settings
-filetype plugin indent on
+filetype plugin indent off
 set tabstop=4
 set shiftwidth=2
 set expandtab
