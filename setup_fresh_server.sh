@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #configure git
-git config --global user.email "hbomb@fastai.com" 
-git config --global user.name "tytushb"
+#git config --global user.email "hbomb@fastai.com" 
+#git config --global user.name "tytushb"
 
 #install curl for stuff....
 sudo apt-get update
