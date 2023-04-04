@@ -1,8 +1,14 @@
 #!/bin/bash
 
+#install bashrc and bash_aliases
+# cd ~/harlanssetup
+ cp ~/.bashrc ~/.bashrc_backup
+ cp bashrc ~/.bashrc
+ cp bash_aliases ~/.bash_aliases
+
 #configure git
-#git config --global user.email "hbomb@fastai.com" 
-#git config --global user.name "tytushb"
+git config --global user.email "hbomb@fastai.com" 
+git config --global user.name "tytushb"
 
 #install curl for stuff....
 sudo apt-get update
@@ -26,9 +32,5 @@ cd ~/.vim
 # sudo apt-get -y install code
 
 #OLD code --install-extension JaredParMSFT.VsVim
-# code --install-extension vscodevim.vim
+code --install-extension vscodevim.vim
 
-#install bashrc and bash_aliases
-# cd ~/harlanssetup
-# cp bashrc ~/.bashrc
-# cp bash_aliases ~/.bash_aliases
